@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="story_testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SpringImageView" customModule="story_testing" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3w4-rq-KpV" customClass="SpringButton" customModule="story_testing" customModuleProvider="target">
+                                <rect key="frame" x="263" y="285" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hello Moto"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                        <real key="value" value="180"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="scaleX">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="flipX"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tz5-sc-xhh" kind="show" id="4yV-hb-uIC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="this is my new application. have fun." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1IM-G4-4g5">
+                                <rect key="frame" x="173" y="435" width="254" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.96691550140000004" blue="0.69584467159999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1IM-G4-4g5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="150" id="3yQ-NJ-o8b"/>
+                            <constraint firstItem="3w4-rq-KpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLD-sm-26D"/>
+                            <constraint firstItem="3w4-rq-KpV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gut-mA-2s7"/>
+                            <constraint firstItem="1IM-G4-4g5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yAb-eT-gUb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDOWN"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                <real key="value" value="90"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="400" y="342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hGL-t9-5VB">
+            <objects>
+                <viewController id="tz5-sc-xhh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GkY-8z-7rU"/>
+                        <viewControllerLayoutGuide type="bottom" id="NOA-el-KeM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sEn-rx-GLa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="GO6-KT-NHJ">
+                                <rect key="frame" x="291" y="173" width="94" height="29"/>
+                                <animations/>
+                            </stepper>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h30-2L-XS3">
+                                <rect key="frame" x="70" y="299" width="150" height="2"/>
+                                <animations/>
+                            </progressView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h30-2L-XS3" firstAttribute="centerX" secondItem="sEn-rx-GLa" secondAttribute="centerX" id="ei1-77-cp3"/>
+                            <constraint firstItem="h30-2L-XS3" firstAttribute="centerY" secondItem="sEn-rx-GLa" secondAttribute="centerY" id="i8h-Qo-UKb"/>
+                            <constraint firstItem="h30-2L-XS3" firstAttribute="centerX" secondItem="sEn-rx-GLa" secondAttribute="centerX" id="q0W-ZY-awm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fAd-5L-Uj8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3y-fs-D9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="342"/>
+        </scene>
+    </scenes>
+</document>
